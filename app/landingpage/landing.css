@@ -1,0 +1,77 @@
+/* LandingPage.module.css */
+
+.landingPage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  .overlay {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .container {
+    padding: 2rem;
+  }
+  
+  .logo h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .authSection h2 {
+    font-size: 1.5rem;
+    color: #0070f3;
+  }
+  
+  .authSection p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .loginButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #0070f3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .signupText a {
+    color: #0070f3;
+    text-decoration: underline;
+  }
+  
+  .backgroundImage {
+    z-index: -1;
+  }
+  
+  @media (max-width: 768px) {
+    .authSection h2 {
+      font-size: 1.2rem;
+    }
+  }
+  
