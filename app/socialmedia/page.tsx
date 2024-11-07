@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './social.css';
-import { div } from 'framer-motion/client';
 import NextBlog from '../nextblog/page';
 
 interface NewsArticle {

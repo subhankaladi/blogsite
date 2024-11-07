@@ -4,7 +4,6 @@
 import './next.css'
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { div } from 'framer-motion/client';
 import Footer from '../footer/page';
 
 interface NewsArticle {

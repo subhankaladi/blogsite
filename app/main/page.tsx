@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import Typewriter from 'typewriter-effect';
 import './main.css';
 import SocialMedia from '../socialmedia/page';
-import { div } from 'framer-motion/client';
 import Link from 'next/link';
 
 const Page = () => {
