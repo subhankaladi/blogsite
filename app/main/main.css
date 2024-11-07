@@ -1,0 +1,179 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body.dark-mode, .main-div.dark {
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+
+body.light-mode, .main-div.light {
+    background-color: white;
+    color: black;
+    height: 100vh;
+}
+
+.main-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.navbar-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.subhan-blog {
+    background: linear-gradient(90deg, rgba(14, 0, 255, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.projects-menu {
+    position: relative;
+}
+
+.arrow {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.projects-menu:hover .arrow {
+    transform: rotate(180deg);
+}
+
+.project-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(-10px);
+}
+
+.projects-menu:hover .project-list,
+.project-list:hover {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.project-list a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+.project-list a:hover {
+    background: rgba(0, 0, 255, 0.1);
+    border-radius: 3px;
+}
+
+.theme-toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: #e91e63;
+    animation: fadeIn 2s ease-in forwards;
+}
+
+.typed-text {
+    font-size: 3.5rem;
+    color: #42a5f5;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    ul {
+        gap: 15px;
+    }
+
+    .subhan-blog {
+        font-size: 1.2rem;
+        padding: 5px;
+    }
+
+    .welcome-section {
+        font-size: 2.5rem;
+    }
+
+    .typed-text {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-section {
+        flex-direction: column;
+        gap: 10px;
+        padding: 5px;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .subhan-blog {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .welcome-section {
+        font-size: 2rem;
+    }
+
+    .typed-text {
+        font-size: 2.5rem;
+        margin-top: 15px;
+    }
+
+    .theme-toggle {
+        font-size: 1.2rem;
+    }
+}
