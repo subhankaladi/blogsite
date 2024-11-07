@@ -1,3 +1,6 @@
+"use client"
+
+
 import './next.css'
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
