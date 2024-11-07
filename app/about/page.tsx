@@ -1,11 +1,12 @@
 import React from 'react'
 import './about.css'
+import Image from 'next/image'
 
 const Page = () => {
   return (
     <div className='about-container'>
       <div className='image-container'>
-        <img 
+        <Image
           src='/subhan.png' 
           alt='Subhan Kaladi' 
           className='about-image' 

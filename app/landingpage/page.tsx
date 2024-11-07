@@ -69,7 +69,7 @@ export default function LandingPage() {
           />
           {error && <p className="error-text">{error}</p>}
           <button onClick={handleLogin} className="submit-btn">Sign In</button>
-          <p className="toggle-text" onClick={toggleForm}>Don't have an account? Sign Up</p>
+          <p className="toggle-text" onClick={toggleForm}>Dont have an account? Sign Up</p>
         </motion.div>
       ) : (
         <motion.div

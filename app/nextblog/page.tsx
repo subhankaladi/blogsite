@@ -5,6 +5,7 @@ import './next.css'
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Footer from '../footer/page';
+import Image from 'next/image';
 
 interface NewsArticle {
   title: string;
@@ -50,7 +51,7 @@ const NextBlog = () => {
         news.map((article, index) => (
           <div key={index} className="card">
             <a href={article.url} target="_blank" rel="noopener noreferrer">
-              <img src={article.urlToImage} alt="news" className="card-img" />
+              <Image src={article.urlToImage} alt="news" className="card-img" />
               <div className="card-content">
                 <h2 className="card-title">{article.title}</h2>
                 <p className="card-description">{article.description}</p>

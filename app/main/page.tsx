@@ -23,7 +23,7 @@ const Page = () => {
     <div>
       <div className={`main-div ${isDarkMode ? 'dark' : 'light'}`}>
         <div className="navbar-section">
-          <h3 className="subhan-blog">SUBHAN'S <span> BLOG</span></h3>
+          <h3 className="subhan-blog">SUBHAN <span> BLOG</span></h3>
           
           <ul>
             <li>Home</li>
