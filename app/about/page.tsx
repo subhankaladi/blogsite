@@ -10,6 +10,8 @@ const Page = () => {
           src='/subhan.png' 
           alt='Subhan Kaladi' 
           className='about-image' 
+          width={1024} 
+  height={576} 
         />
       </div>
       <div className='content-container'>

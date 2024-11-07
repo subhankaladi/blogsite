@@ -51,7 +51,8 @@ const NextBlog = () => {
         news.map((article, index) => (
           <div key={index} className="card">
             <a href={article.url} target="_blank" rel="noopener noreferrer">
-              <Image src={article.urlToImage} alt="news" className="card-img" />
+              <Image src={article.urlToImage} alt="news" className="card-img" width={1024} 
+  height={576}  />
               <div className="card-content">
                 <h2 className="card-title">{article.title}</h2>
                 <p className="card-description">{article.description}</p>
