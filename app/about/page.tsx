@@ -28,7 +28,7 @@ const Page = () => {
           <ul>
             <li>Generative AI updates and tools</li>
             <li>Next.js tutorials and best practices</li>
-            <li>Agentic AI and its business impact</li>
+            <li>Agentic AI and its business impact.</li>
             <li>Startup advice for aspiring tech entrepreneurs</li>
           </ul>
         </div>
